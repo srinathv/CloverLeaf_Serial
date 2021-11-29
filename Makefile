@@ -78,7 +78,7 @@ OMP=
 FLAGS_INTEL     = -O3 -no-prec-div
 FLAGS_SUN       = -fast -xipo=2 -Xlistv4
 FLAGS_GNU       = -O3 -march=native -funroll-loops -g
-FLAGS_ARM       = -O3 -ffp-contract=fast -mcpu=native -g
+FLAGS_ARM       = -O3 -ffp-contract=fast -mcpu=native -g -static
 FLAGS_CRAY      = -em -ra -h acc_model=fast_addr:no_deep_copy:auto_async_all
 FLAGS_PGI       = -fastsse -Mipa=fast -Mlist
 FLAGS_PATHSCALE = -O3
@@ -86,7 +86,7 @@ FLAGS_XL        = -O5 -qipa=partition=large -g -qfullpath -Q -qsigtrap -qextname
 CFLAGS_INTEL     = -O3 -no-prec-div -restrict -fno-alias
 CFLAGS_SUN       = -fast -xipo=2
 CFLAGS_GNU       = -O3 -march=native -funroll-loops -g
-CFLAGS_ARM      = -O3 -mcpu=native -g
+CFLAGS_ARM      = -O3 -mcpu=native -g -static
 CFLAGS_CRAY      = -em -h list=a
 CFLAGS_PGI       = -fastsse -Mipa=fast -Mlist
 CFLAGS_PATHSCALE = -O3
